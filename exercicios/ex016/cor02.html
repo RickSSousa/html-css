@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente em CSS</title>
+    <style>
+        *{/* Configurações globais das CSS*/
+            height: 100%;
+        }
+        body{/*o estilo abaixo permite deixar degrade em direção à direita*/
+            background-image: linear-gradient(190deg, #5757CC, #9835B8 20%, #C22E87, #E84257, #FED16E);
+            /*o invés de linear-gradient, pode usar radial e colocar "circle" no primeiro parametro (degradê redondo).
+            Posso colocar uma % da quantidade daquela cor que quero no degradê, como no exemplo*/
+            background-attachment: fixed; /*Deixa o fundo fixo*/
+        }
+    </style>
+</head>
+<body>
+   <h1>Testando gradiente</h1> 
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listar</h1>
+    <h2>Listas Ordenadas</h2>
+    <!--Nessa tag, colocando os itens dentro de <li> ele ordenará sempre que algo novo entrar em qualquer posição-->
+    <ol type="I"><!--Esse parâmetro permite mudar o tipo de ordem-->
+        <li>Acordar</li>
+        <li>Ligar</li>
+        <li>Tomar café</li>
+        <li>Escovar os dentes</li>
+        <li>Ir pra aula</li>
+        <li>Jantar</li>
+    </ol>
+    <h2>Listas não Ordenadas</h2>
+    <!--Nessa tag, a sequencia não faz sentido-->
+    <ul type="square">
+        <li>Metallica</li>
+        <li>Megadeth</li>
+        <li>Slayer</li>
+        <li>Anthrax</li>
+    </ul>
+
+    <h2>Minhas Linguagens Favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Delphi</li>
+            <li>Pascalzin</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="4"><!--O parâmetro start é onde vc define o início da ordem da lista, pelo type escolhido -->
+            <li>PHP</li>
+            <li>C#</li>
+            <li>Python</li>
+        </ol>
+    </ol>
+    <h2>Meus Jogos Favoritos</h2>
+    <ol>
+        <li>Ps2</li>
+        <ul type = "square"> <!-- Se eu apertar alt e ir selecionando as tags ul com o cursor entre o u e o l, vai aparecer cursor em td e posso apagar td pra mudar pra ol-->
+            <li>CoD</li>
+            <li>GoW</li>
+            <li>GTA</li>
+            <ol type="i">
+                <li>GTA:VC</li>
+                <li>GTA:LCS</li>
+                <li>GTA:3</li>
+                <li>GTA:SA</li>
+            </ol>
+        </ul>
+        <li>PC</li>
+        <ul type = "square">
+            <li>CS</li>
+            <ol type="i">
+                <li>CS:GO</li>
+                <li>CS 1.6</li>
+            </ol>
+            <li>War Thunder</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <dl>
+        <dt>HTML</dt><!--Termo-->
+        <dd>Linguagem de marcação para a criação de conteúdo em um site</dd><!--Descrição-->
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do designe de um site</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interações de um site</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--REGRA: tem q seguir a ordem de tamanhos, igual abaix, max...: 750px, dps max...: 1050px e assim por diante-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo áudios.</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!--Precisa do parâmetro controls pra aparecer o controle do play-->
+    <!--MP3 WAV OGG-->
+    <audio src="midia/metallica-master-of-puppets.mp3" controls autoplay></audio>
+
+    <!--Outra maneira, funciona 100% em tds os navegadores:-->
+    <audio preload="metadata" controls loop> <!--os parâmetros ao lado são pro q vai ser carregado do audio/ controle e loop-->
+        <!--O type deve ser compatível com o formato do audio-->
+        <!--Ele vai tentar reproduzir os audios na ordem, caso n consiga, vai aparecer a mensagem abaixo-->
+        <source src="midia/metallica-master-of-puppets.mp3" type="audio/mpeg">
+        <source src="midia/metallica-master-of-puppets.ogg" type="audio/ogg">
+        <p>Infelizmente seu navegador não consegue reproduzir áudios <a href="midia/metallica-master-of-puppets.mp3">clique aqui para baixar qualquer mp3</a></p>
+    </audio>
+
+    
+
+    <p>Vídeo d uma das minhas músicas favoritas: <a href="https://www.youtube.com/watch?v=lfSdR-ymk9E" target="_blank" rel="external">Metallica - Breadfan (live '89 / Seattle)</a></p>
+</body>
+</html>

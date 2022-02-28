@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="pt-br">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de responsividade</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        main{
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            /*Responsividade do conteúdo principal*/
+            min-width: 280px;
+            max-width: 800px;
+
+            margin: auto;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nobis repudiandae eum doloremque reprehenderit facilis asperiores autem saepe dolore quisquam deleniti quas at accusamus officiis adipisci voluptatem, maxime, illo recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ut illum commodi, fugiat dignissimos ad mollitia. Soluta eos vel explicabo molestiae optio, earum velit, saepe beatae delectus, nobis doloremque? Magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fuga vel accusantium suscipit tempora ipsa doloremque perferendis sequi fugiat tenetur omnis vitae, quisquam labore nemo veritatis ducimus in animi voluptas.</p>
+        <picture>
+            <!--Responsividade da imagem-->
+            <!--Vou ter a img (maior) mas quando a tela chegar na resol 800, vai carregar a img menor-->
+            <source media="(max-width: 800px)" srcset="imagens/irina-blok-pq.jpg">
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor nobis repudiandae eum doloremque reprehenderit facilis asperiores autem saepe dolore quisquam deleniti quas at accusamus officiis adipisci voluptatem, maxime, illo recusandae! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas ut illum commodi, fugiat dignissimos ad mollitia. Soluta eos vel explicabo molestiae optio, earum velit, saepe beatae delectus, nobis doloremque? Magnam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus fuga vel accusantium suscipit tempora ipsa doloremque perferendis sequi fugiat tenetur omnis vitae, quisquam labore nemo veritatis ducimus in animi voluptas.</p>
+    </main>
+</body>
+</html>

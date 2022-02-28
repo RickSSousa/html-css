@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>usando links externos</h1>
+    <!--tag <a> = ancora, hiperlink-->
+    <p>Você pode acessar meu <a href="https://github.com/RickSSousa/MVC-project-one">repositório público no GitHub</a></p>
+    <!--abaixo (usar os 2)
+    o parÂmeto rel = external abrirá o link pra fora do seu site
+    o parâmetro target abrirá uma janela em branco-->
+    <p>Você também pode acessar o <a href="https://youtube.com" target="_blank" rel="external">YouTube</a></p>
+    <h1>Usando links Internos</h1>
+    <!--Com o rel "next", significa próxima pág -->
+    <p>Esta é a primeira pág do site. Se quiser, pode acessar também a <a href="pag002.html" rel="next">Segunda Página</a></p>
+    <!--O target _self é opcional, se n por nd vai ter a msm acçao: abrir link na msm pág do nav-->
+    <p>Você também pode acessar nossa <a href="noticias/pag003.html" target="_self" rel="next">página de notícias</a></p>   
+
+    <h1>Links para download</h1>
+    <ul>
+        <!--Os parâmetros abaixo é para a execução do download.
+        O type correto depende do tipo do arquivo, pode ser consultado em: https://www.iana.org/assignments/media-types/media-types.xhtml -->
+        <li><a href="livro/projeto-asp-net-core-mvc-ef.pdf" download="meulivro.pdf" type="application/pdf">baixar o livro em pdf</a></li>
+        <li><a href="livro/projeto-asp-net-core-mvc-ef.zip" download="meulivro.zip" type="application/zip">livro compactado em .zip</a></li>
+    </ul>
+</body>
+</html>

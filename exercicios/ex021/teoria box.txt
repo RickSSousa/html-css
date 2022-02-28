@@ -1,0 +1,17 @@
+Anatomia de um box:
+
+padding = alcochoamento/preenchimento = espaço entre o box do que está escrito
+margin = margem em volta o padding
+outline = contorno entre o margin e o padding
+
+box-level:
+será criado uma caixa na linha de baixo, com a largura total da tela
+e vai pular mais uma linha antes de continuar um conteúdo
+ex: <div>, <video>, <h1>-<h6>...
+
+inline-level:
+
+vai pular pro lado, desenhar a caixa pro tamanho do seu elemento e não
+quebrará uma linha, continuará na frente o conteúdo
+ex: <span>, <link>, <a>, <button>
+

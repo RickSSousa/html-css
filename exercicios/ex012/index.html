@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeos está hospedado no meu próprio servidor</p>
+    <!--Com os parâmetros width e controls, é largura e controle d play(igual nos áudios)-->
+    <!--Tag simples não recomendada por compatibilidades de navegadores com o formato d vídeo:
+    <video src="midia/metallica-breadfan.m4v" width="500" controls></video>-->
+    <video width="560" poster="imagens/maxresdefault.png" controls autoplay loop>
+        <!--Organizado em ordem de tamanho d arquivo-->
+        <source src="midia/metallica-breadfan.mp4" type="video/mp4">
+        <source src="midia/metallica-breadfan.m4v" type="video/m4v">
+        <source src="midia/metallica-breadfan.ogv" type="video/ogg">
+        <source src="midia/metallica-breadfan.webm" type="video/webm">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+    <!--Essas técnicas acima são caras, pois gera um tráfego de banda alto visto que as visitas no site baixão os vídeos ao acessar-->
+
+    <!--Para fazer isso, só ir na opção "compartilhar" no yt e escolher "Incorporar".
+    Ele já vai criar o HTML da tag <iframe> abaixo
+    Isso fará com q o acesso ao vídeo n seja no seu server, n gastando nd em tráfego de banda-->
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NX56dSf1muw" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/2112265?h=20cd77eb59&byline=0&portrait=0" width="560" 
+    height="459" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+
+    <h1>Canal perdido</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/G_6cHYrMcTA" 
+    title="YouTube video player" frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen></iframe>
+</body>
+</html>
