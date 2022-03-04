@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body{
             height: 100vh; /*isso permite que a imagem cubra 100% da view port*/
-            background-color: black;
+            /* background-color: black;
             background-image: url('imagens/wallpaper002.jpg');
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover; /*permitirá q a imagem cubra o máximo que puder da tela, e não destorce*/
+            background-size: cover; /*permitirá q a imagem cubra o máximo que puder da tela, e não destorce
+            background-attachment: fixed; o fundo fica estático quando scrolla o site */
+
+            /*shorthand - backgroud: color > image > repeat > [size] > attachment
+            O size não está funcionando no momento*/
+
+            background: black url('imagens/wallpaper002.jpg') center center no-repeat fixed;
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid blue;
